@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres
+    container_name: postgres-db-vehicle
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_PASSWORD: 123123123
+      POSTGRES_DB: vehicle_service
+      POSTGRES_USER: root
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data

@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres
+    container_name: postgres-db-rent
+    ports:
+      - "5434:5432"
+    environment:
+      POSTGRES_PASSWORD: 123123123
+      POSTGRES_DB: rent_service
+      POSTGRES_USER: root
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data

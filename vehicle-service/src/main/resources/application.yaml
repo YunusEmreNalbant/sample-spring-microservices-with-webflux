@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: vehicle-service
+  datasource:
+    url: jdbc:postgresql://localhost:5433/vehicle_service
+    username: root
+    password: 123123123
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 8082
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0

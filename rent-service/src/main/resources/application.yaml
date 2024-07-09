@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: rent-service
+  datasource:
+    url: jdbc:postgresql://localhost:5434/rent_service
+    username: root
+    password: 123123123
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 8083
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    fetch-registry: true
+    register-with-eureka: true
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
