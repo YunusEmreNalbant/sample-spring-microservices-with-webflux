@@ -1,4 +1,4 @@
-# Spring Boot Reactive Microservices Architecture
+# Spring Boot Microservices Architecture with WebFlux
 
 This project is a small example of a microservices architecture built with Spring Boot. It aims to demonstrate the basics of microservices, Eureka for service discovery, and inter-service communication using WebClient. The project includes the following components:
 
